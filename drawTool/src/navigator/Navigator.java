@@ -3,17 +3,15 @@ package navigator;
 import java.util.Stack;
 
 import pages.IGamePage;
-import processing.core.PApplet;
-import processing.core.PFont;
 
 public class Navigator {
 
 	private Stack<IGamePage> pageStack;
 	private IGamePage currentPage;
-	private PApplet pApplet;
-	private PFont mono;
+	private Object pApplet;
+	private Object mono;
 	
-	public Navigator(PApplet pApplet) {
+	public Navigator(Object pApplet) {
 		this.pApplet = pApplet;
 		this.pageStack = new Stack<IGamePage>();
 	}
